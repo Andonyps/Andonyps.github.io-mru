@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Movimiento</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header> 
+        <img src="imagenes/LOGO.jpg" alt="Logo de la Universidad"> 
+        <h1>Calculadora de MRU y MRUV</h1> 
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#definicion">Inicio</a></li>
+            <li><a href="#calculos">Fórmulas</a></li>
+        </ul>
+    </nav>
+
+    <section id="definicion">
+        <div class="container">
+            <h2>Definición de MRU</h2>
+            <p>El Movimiento Rectilíneo Uniforme (MRU) es un tipo de movimiento en el que un objeto se desplaza en línea recta con velocidad constante. Es decir, recorre distancias iguales en tiempos iguales.</p>
+            <img src="imagenes/mru.png" alt="MRU">
+            <h2>Definición de MRUV</h2>
+            <p>El Movimiento Rectilíneo Uniformemente Variado (MRUV) es un tipo de movimiento en el que un objeto se desplaza en línea recta con aceleración constante. Esto significa que la velocidad del objeto cambia de manera uniforme con el tiempo.</p>
+            <img src="imagenes/mruv.png" alt="MRUV">
+        </div>
+    </section>
+
+    <section id="calculos">
+        <div class="container">
+            <div class="section">
+                <h2>Calcular Velocidad</h2>
+                <input type="number" id="distancia" placeholder="Distancia (m)">
+                <input type="number" id="tiempo" placeholder="Tiempo (s)">
+                <button onclick="calcularVelocidad()">Calcular Velocidad</button>
+                <div id="resultado-velocidad" class="resultado"></div>
+            </div>
+
+            <div class="section">
+                <h2>Calcular Distancia</h2>
+                <input type="number" id="velocidad" placeholder="Velocidad (m/s)">
+                <input type="number" id="tiempo2" placeholder="Tiempo (s)">
+                <button onclick="calcularDistancia()">Calcular Distancia</button>
+                <div id="resultado-distancia" class="resultado"></div>
+            </div>
+
+            <div class="section">
+                <h2>Calcular Tiempo</h2>
+                <input type="number" id="distancia2" placeholder="Distancia (m)">
+                <input type="number" id="velocidad2" placeholder="Velocidad (m/s)">
+                <button onclick="calcularTiempo()">Calcular Tiempo</button>
+                <div id="resultado-tiempo" class="resultado"></div>
+            </div>
+
+            <div class="subsection">
+                <h2>Calcular Velocidad Final (MRUV)</h2>
+                <input type="number" id="v0" placeholder="Velocidad inicial (m/s)">
+                <input type="number" id="aceleracion" placeholder="Aceleración (m/s²)">
+                <input type="number" id="tiempo-mruv" placeholder="Tiempo (s)">
+                <button onclick="calcularVelocidadFinal()">Calcular Velocidad Final</button>
+                <div id="resultado-velocidad-final" class="resultado"></div>
+            </div>
+
+            <div class="subsection">
+                <h2>Calcular Aceleración</h2>
+                <input type="number" id="v_final" placeholder="Velocidad final (m/s)">
+                <input type="number" id="v_inicial" placeholder="Velocidad inicial (m/s)">
+                <input type="number" id="tiempo-aceleracion" placeholder="Tiempo (s)">
+                <button onclick="calcularAceleracion()">Calcular Aceleración</button>
+                <div id="resultado-aceleracion" class="resultado"></div>
+            </div>
+
+            <div class="subsection">
+                <h2>Calcular Posición</h2>
+                <input type="number" id="v0-posicion" placeholder="Velocidad inicial (m/s)">
+                <input type="number" id="aceleracion-posicion" placeholder="Aceleración (m/s²)">
+                <input type="number" id="tiempo-posicion" placeholder="Tiempo (s)">
+                <button onclick="calcularPosicion()">Calcular Posición</button>
+                <div id="resultado-posicion" class="resultado"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Brenton Andony Par Sohon - 2290-21-12374 - </p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
